@@ -9,8 +9,8 @@ import pl.kurs.springhwrkweek5.model.CityParam;
 import pl.kurs.springhwrkweek5.model.Holiday;
 import pl.kurs.springhwrkweek5.model.PageParam;
 import pl.kurs.springhwrkweek5.model.weather.Weather;
-import pl.kurs.springhwrkweek5.services.HolidayServiceImpl;
-import pl.kurs.springhwrkweek5.services.WeatherServiceImpl;
+import pl.kurs.springhwrkweek5.services.HolidayService;
+import pl.kurs.springhwrkweek5.services.WeatherService;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -18,8 +18,8 @@ import java.util.List;
 
 @Controller
 public class PageController {
-    private HolidayServiceImpl holidayService;
-    private WeatherServiceImpl weatherService;
+    private HolidayService holidayService;
+    private WeatherService weatherService;
 
     private String defaultCountry;
     private Integer defaultYear;
@@ -27,7 +27,7 @@ public class PageController {
     private List<Holiday> holidayList;
     private Weather weather;
 
-    public PageController(HolidayServiceImpl holidayService, WeatherServiceImpl weatherService) {
+    public PageController(HolidayService holidayService, WeatherService weatherService) {
         this.holidayService = holidayService;
         this.weatherService = weatherService;
 

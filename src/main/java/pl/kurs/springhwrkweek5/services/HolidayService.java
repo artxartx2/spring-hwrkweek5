@@ -6,7 +6,7 @@ import pl.kurs.springhwrkweek5.model.Holiday;
 import pl.kurs.springhwrkweek5.model.PageParam;
 
 @Service
-public class HolidayServiceImpl {
+public class HolidayService {
 
     public Holiday[] getHolidays(PageParam params) {
 
